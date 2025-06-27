@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection en cours...</title>
+    <script>
+        window.onload = function() {
+            var surveys = [
+"https://columbo.univ-amu.fr/index.php/256279?lang=fr", // Condition 1 CONTROL > 256279
+"https://columbo.univ-amu.fr/index.php/289827?lang=fr", // Condition 2 UICN > 289827 
+"https://columbo.univ-amu.fr/index.php/492383?lang=fr", // Condition 3 ECOLOGY > 492383
+            ];
+            var randomIndex = Math.floor(Math.random() * surveys.length);
+            window.location.href = surveys[randomIndex];
+        };
+    </script>
+</head>
+<body>
+    <p>Redirection en cours...</p>
+</body>
+</html>
